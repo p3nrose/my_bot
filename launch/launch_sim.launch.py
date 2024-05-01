@@ -53,6 +53,12 @@ def generate_launch_description():
         arguments=["joint_broad"],
     )
 
+    # teleop_node = Node(
+    #     package="teleop_twist_keyboard",
+    #     executable="teleop_twist_keyboard",
+    #     remappings=[("/cmd_vel","/diff_cont/cmd_vel_unstamped")]
+    # )
+
 
     # Code for delaying a node (I haven't tested how effective it is)
     # 
@@ -78,5 +84,5 @@ def generate_launch_description():
         gazebo,
         spawn_entity,
         diff_drive_spawner,
-        joint_broad_spawner
+        joint_broad_spawner,
     ])
